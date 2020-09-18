@@ -1,0 +1,63 @@
+.cabeçalho{
+    font-size: 50px;
+    background-color: rgb(255, 145, 0);
+    text-align: center;
+    margin: 0;
+    height: 160px;
+
+}
+
+#cabeçalho-home{
+    font-size: 30px;
+    background-color: rgb(255, 145, 0);
+    text-align: center;
+    margin: 0;
+    height: 160px;
+}
+.menu{
+    background-color: rgb(255, 230, 0);
+    font-size: 20px;
+    text-align: right;
+    margin-top: 0;
+    height: 30px;
+    justify-content: center;
+}
+.img{
+    display: flexbox;
+    justify-self: center;
+    align-self: center;
+    margin: 0 auto;
+    max-width: 250px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    background-color: lightskyblue;
+}
+
+#controle-estoque{
+    display: inline;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+}
+.tabela-produtos{
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#rodape{
+    position: fixed;
+    bottom: 0;
+    background-color:rgb(255, 145, 0);
+    color: rgb(2, 0, 128);
+    text-align: end;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: cursive;
+    height: 80px;
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+}
