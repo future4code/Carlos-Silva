@@ -105,7 +105,12 @@ div:nth-child(2),
 div:last-child {
     text-align: center;
 }
-
+#campoTexto{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-width: medium;
+}
 table {
     text-align: center;
     width: 60%;
