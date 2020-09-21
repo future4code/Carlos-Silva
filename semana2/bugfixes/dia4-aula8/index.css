@@ -113,6 +113,8 @@ div:last-child {
     border-width: medium;
 }
 table {
+    position: relative;
+    left: 25%;
     text-align: center;
     width: 60%;
 }
