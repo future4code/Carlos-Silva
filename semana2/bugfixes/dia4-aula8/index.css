@@ -22,9 +22,9 @@ input {
     width: 500px;
 }
 
-button:focus {
+/* button:focus {
     color: white;
-}
+} */
 
 img {
     width: 100px;
@@ -38,6 +38,7 @@ div img {
     /* background: black; */
     width: 30px;
 }
+
 
 .botao-amarelo {
     position: absolute;
@@ -93,6 +94,9 @@ div img {
     color: #c44f00;
     padding: 100px 0;
     font-size: 60px;
+}
+ol{
+    list-style-position: inside;
 }
 
 
