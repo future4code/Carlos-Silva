@@ -1,0 +1,201 @@
+Lvl 1 
+
+#pond {
+  display: flex;
+  justify-content: flex-end;
+}
+
+Lvl 2 
+
+#pond {
+  display: flex;
+  justify-content: center;
+}
+
+Lvl 3 
+
+#pond {
+  display: flex;
+  justify-content: space-around;
+}
+
+Lvl 4 
+
+#pond {
+  display: flex;
+  justify-content: space-between;
+}
+
+Lvl 5 
+
+#pond {
+  display: flex;
+  align-items: flex-end;
+}
+
+Lvl 6
+
+#pond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+Lvl 7
+
+#pond {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+Lvl 8
+
+#pond {
+  display: flex;
+ flex-direction: row-reverse;
+}
+
+Lvl 9 
+
+#pond {
+  display: flex;
+  flex-direction: column;
+}
+
+Lvl 10 
+
+#pond {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+Lvl 11 
+
+#pond {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+Lvl 12 
+
+#pond {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+Lvl 13 
+
+#pond {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+Lvl 14
+
+#pond {
+  display: flex;
+}
+
+.yellow {
+  order: 3;
+}
+
+Lvl 15
+
+#pond {
+  display: flex;
+}
+
+.red {
+  order: -1;
+}
+
+Lvl 16
+
+#pond {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow {
+  align-self: flex-end;
+}
+
+Lvl 17
+
+#pond {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow {
+  order: 1;
+  align-self: flex-end;
+}
+
+Lvl 18
+
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+Lvl 19
+
+#pond {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+Lvl 20 
+
+#pond {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+Lvl 21
+
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+Lvl 22
+
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+Lvl 23
+
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-content: center;
+}
+
+Lvl 24
+
+#pond {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-content: space-between;
+}
+
+
+
+
