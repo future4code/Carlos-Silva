@@ -7,30 +7,78 @@ body {
     color: white;
 }
 
+#top-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 30px;
+}
+
 .green-background {
+    display: grid;
+    justify-content: center;
+    align-content: center;
     background-color: green;
 }
 
 .yellow-background {
+    display: grid;
+    justify-content: center;
+    align-content: center;
     background-color: yellow;
 }
 
 .pink-background {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 350px;
     background-color: fuchsia;
+}
+#middle-container{
+    display: flex;
+    justify-content: space-between;
+}
+#content2{
+    display: grid;
+    justify-items: start;
+}
+#vertical-middle-container{
+    display: grid;
+    justify-items: end;
+    
 }
 
 .blue-background {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 200px;
+    width: 700px;
     background-color: blue;
 }
 
 .red-background {
+    display: grid;
     background-color: red;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
 }
 
 .lightgreen-background {
+    display: grid;
     background-color: lightgreen;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
 }
 
 .purple-background {
+    display: grid;
+    align-content: center;
+    justify-items: center;
     background-color: purple;
+    height: 45px;
 }
