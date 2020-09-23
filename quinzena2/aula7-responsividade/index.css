@@ -39,7 +39,7 @@ div {
   
 #fifth-block {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     height: 10em;
     border: none;
@@ -76,23 +76,89 @@ div {
 .white-block {
     border: 1px solid black;
     background-color: white;
-    width: 33%;
+    width: 30%;
     margin: 0.6em;
 }
-
-  @media screen and (max-device-width : 767px) and (min-device-width : 400px){
-    
-    #second-block, #third-block{
-        flex-wrap: wrap;
-    }
-    .blue-block, .yellow-block{
-        width: 45%;
-    }
-    .green-block{
-        width: 97.5%;
-    }
-    #fifth-block{
-        flex-wrap: wrap;
-        width: 100%;
-    }
+.white-block2 {
+    border: 1px solid black;
+    background-color: white;
+    width: 30%;
+    margin: 0.6em;
 }
+    @media screen and (max-device-width : 767px){
+    
+        #second-block, #third-block{
+            flex-wrap: wrap;
+        }
+        .blue-block, .yellow-block{
+            width: 45%;
+        }
+        .green-block{
+            width: 97.5%;
+        }
+        .white-block{
+            width: 45%;
+        }
+        .white-block2{
+            width: 97.5%;
+        }
+    }
+    @media screen and (max-device-width : 430px){
+        #first-block {
+            flex-direction: column;
+        }
+          
+        #second-block {
+            flex-direction: column;
+        }
+          
+        #third-block {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+          
+        #forth-block {
+            flex-direction: column;
+        }
+          
+        #fifth-block {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .blue-block {
+            width: 95%;
+            height: 4em;
+            margin: 0.5em;
+        }
+          
+        .yellow-block {
+            width: 95%;
+            height: 4em;
+            margin: 0.5em;
+        }
+          
+        .green-block {
+            width: 95%;
+            height: 4em;
+            margin: 0.5em;
+        }
+          
+        .black-block {
+            width: 95%;
+            height: 4em;
+            margin: 0.5em;
+        }
+          
+        .white-block {
+            flex-direction: column;
+            width: 95%;
+            height: 4em;
+            margin: 0.5em;
+        }
+        .white-block2 {
+            flex-direction: column;
+            width: 95%;
+            height: 4em;
+            margin: 0.5em;
+        }
+        } 
