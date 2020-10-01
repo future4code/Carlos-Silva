@@ -82,7 +82,7 @@ console.log(arrayPares)
 
 //EXERCÍCIO 3.d
 
-
+/*
 let arrayOriginal = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85]
 
 let arrayStrings = []
@@ -94,10 +94,9 @@ for(let i = 0; i < arrayOriginal.length; i++){
 }
 
 console.log(arrayStrings)
-
+*/
 
 //EXERCÍCIO 3.e
-
 /*
 let arrayOriginal = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85]
 
@@ -129,7 +128,6 @@ for (let i = 0; i > arrayOriginal.length; i--) {
 console.log(menorValor)
 */
 
-//***DESAFIO ESCRITA DE CÓDIGO***
 
 
 
