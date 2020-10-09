@@ -186,14 +186,33 @@ if(primeiroNumero > segundoNumero){
 
 const minhaArray = [2, 56, 7, 89, 540, 32, 630, 629, 8090]
 
-let maiorNumero = array[0]
-let segundoMaiorNumero = array[0]
+let maiorNumero
+let segundoMaiorNumero
+let indiceMaiorNumero
+
+function pegaMaiorNumero(array){
+    for(let i= 0; i < array.length; i++){
+        if(maiorNumero < array[i]){
+            maiorNumero = array[i]
+            indiceMaiorNumero = i
+        }
+    }
+    
+    
+}
+
+pegaMaiorNumero(minhaArray)
+
+let segundaArray = minhaArray.splice(i, 1)
 
 function pegaMaiorNumero(minhaArray){
     for(let i= 0; i < minhaArray.length; i++){
-        if(maiorNumero < minhaArray[i]){
-            maiorNumero = minhaArray[i]
+        if(segundoMaiorNumero < minhaArray[i]){
+            segundoMaiorNumero = minhaArray[i]
+           
         }
     }
-
+    
+    
 }
+console.log(segundaArray)
