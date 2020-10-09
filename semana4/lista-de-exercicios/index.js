@@ -119,6 +119,7 @@ while(i < quantidadeDeNumerosPares) {
 
 //Exercício 4
 
+/*
 function verificaTriangulo(a, b, c){
 
     if((a === b) && (b === c) && (c === a)){
@@ -128,7 +129,7 @@ function verificaTriangulo(a, b, c){
     }else if((a === b && b !== c) || (a !== b && b === c) || (a === c && b !== c)){
 
         return "O triangulo é isosceles"
-        
+
     }else{
 
         return "O triangulo é escaleno"
@@ -137,3 +138,42 @@ function verificaTriangulo(a, b, c){
 }
 
 console.log(verificaTriangulo(8, 7, 5))
+*/
+
+//Exercício 5
+
+let primeiroNumero = 50
+
+let segundoNumero = 25
+
+if(primeiroNumero > segundoNumero){
+    console.log(`O maior é: ${primeiroNumero}`)
+}else if(primeiroNumero === segundoNumero){
+    console.log("Os números são iguais")
+}else{
+    console.log(`O maior é: ${segundoNumero}`)
+}
+
+if(primeiroNumero % segundoNumero === 0){
+    console.log(`${primeiroNumero} é divisível por ${segundoNumero}`)
+}else{
+    console.log(`${primeiroNumero} não é divisível por ${segundoNumero}`)
+}
+
+if(segundoNumero %primeiroNumero === 0){
+    console.log(`${segundoNumero} é divisível por ${primeiroNumero}`)
+}else{
+    console.log(`${segundoNumero} não é divisível por ${primeiroNumero}`)
+}
+
+if(primeiroNumero > segundoNumero){
+    let resultado = primeiroNumero - segundoNumero
+
+    console.log(`A diferença entre eles é ${resultado}`)
+}else if(segundoNumero > primeiroNumero){
+    resultado = segundoNumero - primeiroNumero
+
+    console.log(`A diferença entre eles é ${resultado}`)
+}else{
+    console.log("Não diferença entre eles")
+}
