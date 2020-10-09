@@ -47,3 +47,33 @@
     -10
     1590
 */
+
+
+
+// *** Exercícios de Lógica de Programação ***
+
+//Exercício 1
+
+// for, for of e while
+
+/*
+const arrayDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for(let i = 0; i < arrayDeNumeros.length; i++){
+
+    console.log(arrayDeNumeros[i])
+}
+
+for(numero of arrayDeNumeros){
+    console.log(numero)
+}
+
+let index = 0
+
+while(index <= 10){
+
+    console.log(index)
+
+    index++
+}
+*/
