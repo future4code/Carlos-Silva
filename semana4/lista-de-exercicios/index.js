@@ -102,3 +102,18 @@ true && false && true // Retornaria false
 false && false || (true && true && true)
 false || true // retornaria true
 */
+
+//Exercício 3
+
+/*
+O código não funciona porque como condição do while foi dado que i seria <= quantidadeDeNumerosPares. O certo seria somente o sinal de <. O outro problema que encontrei é que não tinha o i++ no final do while. O que faria o código entrar em loop infinito. Segue abaixo o código escrito corretamente:
+*/
+/*
+const quantidadeDeNumerosPares = 10 //pode ser qualquer número
+let i = 0
+while(i < quantidadeDeNumerosPares) {
+  console.log(i*2)
+  i++
+}
+*/
+
