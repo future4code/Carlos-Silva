@@ -33,3 +33,17 @@
     6
     8
 */
+
+//Exercício 4
+
+/*
+    Esse programa recebe uma array de números chamada numero e duas arrays. A array numero1 recebe o valor infinity e a array 2 recebe o valor 0.
+    No for of ele analisa cada numero do array numeros e entra na condicional if.
+    Se o numero for menor do que numero1 (que inicialmente recebe o vaor infinito) então o numero1 receberá esse numero da array numeros.
+    Sendo assim, nesse primeiro if ele pegará o menor número da array, que será o -10.
+    No segundo if ele pega o maior número da array, porque ele vai transformando o numero2 no múmero da array, desde que esse seja maior que o valor anteriormente recebido.
+    Ficará impresso:
+
+    -10
+    1590
+*/
