@@ -10,3 +10,13 @@
     Exemplo (cotação do dolar sendo informada como 5.55): R$ 555
 */
 
+//Exercício 2
+
+/*
+    Essa função recebe dois parametros e analisa qual será o valorAposInvestimento para cada tipoDeInvestimento informado. Caso o tipoDeInvestimento informado não seja nenhum dos previstos na function, será exibido o alerta "TIPO DE INVESTIMENTO INFORMADO INCORRETO"
+    Já fora da função ele armazena a prórpia função em duas constantes (novoMontante e segundoMontante) recebendo tipoDeInvestimento e valor distintos para cada umas das constantes.
+    Abaixo ele imprime o novoMontante e o segundoMontante. Ficando impresso da seguinte forma:
+
+    165
+    TIPO DE INVESTIMENTO INFORMADO INCORRETO
+*/
