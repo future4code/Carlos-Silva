@@ -142,6 +142,7 @@ console.log(verificaTriangulo(8, 7, 5))
 
 //Exercício 5
 
+/*
 let primeiroNumero = 50
 
 let segundoNumero = 25
@@ -176,4 +177,23 @@ if(primeiroNumero > segundoNumero){
     console.log(`A diferença entre eles é ${resultado}`)
 }else{
     console.log("Não diferença entre eles")
+}
+*/
+
+
+
+// *** Exercícios de Funções ***
+
+const minhaArray = [2, 56, 7, 89, 540, 32, 630, 629, 8090]
+
+let maiorNumero = array[0]
+let segundoMaiorNumero = array[0]
+
+function pegaMaiorNumero(minhaArray){
+    for(let i= 0; i < minhaArray.length; i++){
+        if(maiorNumero < minhaArray[i]){
+            maiorNumero = minhaArray[i]
+        }
+    }
+
 }
