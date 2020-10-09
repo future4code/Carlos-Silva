@@ -109,7 +109,7 @@ false || true // retornaria true
 O código não funciona porque como condição do while foi dado que i seria <= quantidadeDeNumerosPares. O certo seria somente o sinal de <. O outro problema que encontrei é que não tinha o i++ no final do while. O que faria o código entrar em loop infinito. Segue abaixo o código escrito corretamente:
 */
 /*
-const quantidadeDeNumerosPares = 10 //pode ser qualquer número
+const quantidadeDeNumerosPares = 7 //pode ser qualquer número
 let i = 0
 while(i < quantidadeDeNumerosPares) {
   console.log(i*2)
@@ -117,3 +117,23 @@ while(i < quantidadeDeNumerosPares) {
 }
 */
 
+//Exercício 4
+
+function verificaTriangulo(a, b, c){
+
+    if((a === b) && (b === c) && (c === a)){
+
+        return "O triangulo é equilátero"
+
+    }else if((a === b && b !== c) || (a !== b && b === c) || (a === c && b !== c)){
+
+        return "O triangulo é isosceles"
+        
+    }else{
+
+        return "O triangulo é escaleno"
+    }
+
+}
+
+console.log(verificaTriangulo(8, 7, 5))
