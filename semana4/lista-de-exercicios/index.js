@@ -77,3 +77,28 @@ while(index <= 10){
     index++
 }
 */
+
+//Exercício 2.a
+
+/*
+booleano1 && booleano2 && !booleano4
+true && false && true // Retornaria false
+
+//Exercício 2.b
+(booleano1 && booleano2) || !booleano3
+(true && false) || false // Retornaria false
+
+//Exercício 2.c
+(booleano2 || booleano3) && (booleano4 || booleano1)
+(false || true) && (false || true) // Retornaria true
+
+//Exercício 2.d
+!(booleano2 && booleano3) || !(booleano1 && booleano3)
+!(false && true) || !(true && true) // Retornaria true
+
+//Exercício 2.e
+
+!(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)
+false && false || (true && true && true)
+false || true // retornaria true
+*/
