@@ -239,4 +239,21 @@ darHello()
 
 //Exercício 1
 
+/*
+    São estruturas que usamos para armazenar dados mais robustos e complexos de forma organizada. São utilizados para, conforme material de aula, criar modelos do mundo real de forma mais intuitiva.
+*/
 
+//Exercício 2
+
+let criaRetangulo = (lado1, lado2) => {
+
+    let retangulo = {
+    largura: lado1,
+    altura: lado2,
+    perimetro: 2*(lado1 + lado2),
+    area: lado1 * lado2,
+    }
+    return retangulo
+}
+
+console.log(criaRetangulo(4, 6))
