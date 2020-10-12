@@ -233,3 +233,10 @@ const darHello = () => {
 darHello()
 */
 
+
+
+// *** Exercícios de Objetos ***
+
+//Exercício 1
+
+
