@@ -245,6 +245,7 @@ darHello()
 
 //Exercício 2
 
+/*
 let criaRetangulo = (lado1, lado2) => {
 
     let retangulo = {
@@ -257,3 +258,18 @@ let criaRetangulo = (lado1, lado2) => {
 }
 
 console.log(criaRetangulo(4, 6))
+*/
+
+//Exercício 3
+
+const filmeFavorito = {
+
+    titulo: "Super Xuxa contra Baixo Astral",
+    ano: 1988,
+    diretor: "Anna Penido",
+    atriz: "Xuxa Meneghel",
+    ator: "Guilherme Karan"
+    
+}
+
+console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atriz} e ${filmeFavorito.ator}`)
