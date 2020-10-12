@@ -299,3 +299,40 @@ function anonimizarPessoa() {
 console.log(anonimizarPessoa())
 */
 
+
+
+// *** Exercícios de Funções de array ***
+
+//Exercício 1.a
+
+/*
+let arrayDeObjetos = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+
+const adultos = arrayDeObjetos.filter((pessoa, index, array) =>{
+    if(pessoa.idade >= 20){
+        return true
+    }
+    return false
+})
+
+console.log(adultos)
+
+//Exercício 1.b
+
+const criancas = arrayDeObjetos.filter((pessoa, index, array) =>{
+    if(pessoa.idade < 20){
+        return true
+    }
+    return false
+})
+
+console.log(criancas)
+*/
+
+
+
