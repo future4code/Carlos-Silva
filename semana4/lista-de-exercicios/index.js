@@ -336,3 +336,28 @@ console.log(criancas)
 
 
 
+//Exercício 2.a
+
+/*
+const arrayOriginal = [1, 2, 3, 4, 5, 6]
+
+const arrayDobrada = arrayOriginal.map((numero) => {
+    return numero*2
+})
+console.log(arrayDobrada)
+*/
+
+//Exercício 2.b
+
+/*
+const arrayOriginal = [1, 2, 3, 4, 5, 6]
+
+const arrayTriplicadaEmString = arrayOriginal.map((numero) => {
+    
+    return String(numero*3)
+})
+console.log(arrayTriplicadaEmString)
+*/
+
+
+
