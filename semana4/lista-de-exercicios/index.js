@@ -186,12 +186,12 @@ if(primeiroNumero > segundoNumero){
 
 //Exercício 1
 
-/*
-const minhaArray = [2, 56, 7, 89, 540, 32, 630, 629, 8090]
 
-let maiorNumero
-let segundoMaiorNumero
-let indiceMaiorNumero
+const minhaArray = [2, 56, 7, 89, 540, 32, 630, 8090, 629]
+
+ let maiorNumero
+ let segundoMaiorNumero
+ let indiceMaiorNumero
 
 function pegaMaiorNumero(array){
     for(let i= 0; i < array.length; i++){
@@ -219,7 +219,7 @@ function pegaMaiorNumero(minhaArray){
     
 }
 console.log(segundaArray)
-*/
+
 
 //Exercício 2
 
