@@ -359,5 +359,15 @@ const arrayTriplicadaEmString = arrayOriginal.map((numero) => {
 console.log(arrayTriplicadaEmString)
 */
 
+//Exercício 2.c
 
+const arrayOriginal = [1, 2, 3, 4, 5, 6]
 
+const parImpar = arrayOriginal.map((numero) => {
+    if(numero % 2 === 0){
+        return `${numero} é par`
+    }
+    return `${numero} é impar`
+})
+
+console.log(parImpar)
