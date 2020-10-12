@@ -262,6 +262,7 @@ console.log(criaRetangulo(4, 6))
 
 //Exercício 3
 
+/*
 const filmeFavorito = {
 
     titulo: "Super Xuxa contra Baixo Astral",
@@ -272,4 +273,29 @@ const filmeFavorito = {
     
 }
 
-console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atriz} e ${filmeFavorito.ator}`)
+console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atriz} e ${filmeFavorito.ator}!`)
+*/
+
+//Exercício 4
+
+/*
+const pessoa = {
+    nome: "Cleitin",
+    idade: 30,
+    email: "obrabo@gmail.com",
+    endereco: "rua dos bobos, 0"
+}
+
+function anonimizarPessoa() {
+
+    const novaPessoa ={
+        ...pessoa,
+        nome: "Anonimo"
+    }
+    return novaPessoa
+
+}
+
+console.log(anonimizarPessoa())
+*/
+
