@@ -184,6 +184,9 @@ if(primeiroNumero > segundoNumero){
 
 // *** Exercícios de Funções ***
 
+//Exercício 1
+
+/*
 const minhaArray = [2, 56, 7, 89, 540, 32, 630, 629, 8090]
 
 let maiorNumero
@@ -216,3 +219,17 @@ function pegaMaiorNumero(minhaArray){
     
 }
 console.log(segundaArray)
+*/
+
+//Exercício 2
+
+/*
+const darHello = () => {
+
+    alert("Hello Labenu")
+
+}
+
+darHello()
+*/
+
