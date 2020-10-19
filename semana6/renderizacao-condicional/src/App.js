@@ -20,17 +20,21 @@ export class App extends React.Component {
         return <Etapa3></Etapa3>;
       case 4:
         return <Final></Final>;
+      default:
+        return <Etapa1></Etapa1>;
     }
   }
 
-  onClickIrProximaEtapa = (event) => {
-    this.setState({ etapa: event.target.value});
+  onClickIrProximaEtapa = () => {
+    this.setState({ etapa: this.state.etapa + 1});
   };
     render(){
       return (
         <div className="App">
           {this.renderizaEtapa()}
-          <button onClick={this.onClickIrProximaEtapa}>Próxima etapa</button>
+          {this.state.etapa !== 4 && 
+            <button onClick={this.onClickIrProximaEtapa}>Próxima etapa</button>
+          }
         </div>
       );
     }
