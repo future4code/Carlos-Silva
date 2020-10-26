@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "1a0cfb14-b332-47c9-9c66-ad5adb8ffe40",
+		"name": "playlists-Carlos-Augusto",
+		"description": "Resolução dos exercícios propostos no dia 26/10.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pega todas as playlists",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "carlos-augusto-dumont",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				},
+				"description": "Pega todas as playlists da API labefy"
+			},
+			"response": []
+		},
+		{
+			"name": "Cria nova playlist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "carlos-augusto-dumont",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Pop Nacional\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adiciona músicas nas playlists",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "carlos-augusto-dumont",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"O Sol\", \r\n    \"artist\": \"Vitor Kley\",\r\n    \"url\": \"https://www.youtube.com/watch?v=YVJijQIualA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/1d9aea57-c9eb-4921-a23a-bb323e17b78a/tracks/",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"1d9aea57-c9eb-4921-a23a-bb323e17b78a",
+						"tracks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pega músicas das playlists",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "carlos-augusto-dumont",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/60ec07db-83d7-417f-a41c-6c6bf59bbcd3/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"60ec07db-83d7-417f-a41c-6c6bf59bbcd3",
+						"tracks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta músicas da playlist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "carlos-augusto-dumont",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/969912de-0f5e-4087-96e8-28ded74d7f75/tracks/67782a4c-1010-4dc0-91ab-4678037970f4",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"969912de-0f5e-4087-96e8-28ded74d7f75",
+						"tracks",
+						"67782a4c-1010-4dc0-91ab-4678037970f4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pesquisa playlist",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "carlos-augusto-dumont",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=rock",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "rock"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Playlist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "carlos-augusto-dumont",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/1ba4dccd-b836-4aca-a6fe-2abe8a77d1de",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"1ba4dccd-b836-4aca-a6fe-2abe8a77d1de"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
