@@ -1,0 +1,168 @@
+body{
+    background-color:  white;
+}
+header{
+    display: flex;
+    width: 99vw;
+    background-color: #C23949;
+}
+#logo{
+    /* logomarca no canto superior esquerdo da tela */
+    width: 20vw;
+    height: 35vh;
+}
+#simbolo{
+    /* simbolo no canto superior direito da tela */
+    display: flex;
+    align-self: center;
+    padding-right: 4vw;
+    height: 15vh;
+
+}
+h1{
+    /* Texto exeriencia e inovacao a seu servico, no header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C23949;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: oblique;
+    margin: 0;
+    padding-right: 3vw;
+    width: 85vw;
+    height: 35vh;
+}
+#menu ul{
+    /* Referente ao menu do topo da pagina */
+    padding: 10px 0px 10px 0px;
+    margin:0px;
+    background-color: #AE3241;
+    list-style:none;
+    width: 99vw
+}
+
+#menu ul li { 
+    /* Referente ao menu do topo da pagina */
+    display: inline; 
+    padding: 8vw;
+    color: white;
+    font-size: 1rem;
+}
+
+#menu-footer ul{
+    /* Referente ao menu do fim da pagina */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 0px 13px 0px;
+    margin:0px;
+    background-color: #DA818B;
+    color: white;
+    list-style:none;
+    height: 7vh;
+    width: 98.8vw
+}
+
+#menu-footer ul li{
+    /* Referente ao menu do fim da pagina */
+    display: inline; 
+    padding: 2vw;
+    color: white;
+    font-size: 1rem;
+}
+
+#corpo-landing{
+    /* referente ao corpo da landing-page */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 50vh;
+    width: 99vw;
+}
+
+.img-corpo{
+    /* Imagens no corpo da página */
+    display: flex;
+    justify-content: center;
+    width: 32.8vw;
+    height: 35vh;
+}
+
+h2{
+    /* Texto maior em cima de cada uma das imagens */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 800;
+}
+.texto-corpo{
+    /* Pequena mensagem entre o titulo das imagens e as próprias imagens */
+    text-align: center;
+    font-style: oblique;
+    font-size: 1.1rem;
+}
+#bloco1{
+    /* Primeira coluna do corpo da landing-page */
+    background-color: #DA818B; 
+    color: #AE3241;
+}
+#bloco2{
+     /* Segunda coluna do corpo da landing-page */
+    background-color: #EDC0C5;
+    color: #AE3241;
+}
+#bloco3{
+     /* Terceira coluna do corpo da landing-page */
+    background-color: #F6DFE2;
+    color: #AE3241;
+}
+
+.icones{
+    /* Pequenos icones no footer */
+    width: 3vw;
+    padding-top: 2px;
+}
+.icones:hover{
+    /* mudança de cor de fundo ao passar o cursor */
+    background-color: #AE3241;
+}
+.icones:active{
+    /* mudança de cor de fundo ao clicar */
+    background-color: white;
+}
+
+@media screen and (max-width:375px){
+    
+    #corpo-landing{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    h1{
+        display: none;
+    }
+    #logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10vw;
+        width: 80vw;
+    }
+    #simbolo{
+        display: none;
+    }
+    #menu ul li { 
+       
+        padding: 3vw;
+    }
+    .img-corpo{
+        /* Imagens no corpo da página */
+        width: 99vw;
+}
+     #menu-footer{
+         display: none;
+     }

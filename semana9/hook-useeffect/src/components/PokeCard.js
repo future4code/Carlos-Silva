@@ -21,13 +21,6 @@ const PokeCard = props => {
         pegaPokemon(props.pokemon)
   }, [props.pokemon])
 
-  // função que bate na poke API com um nome específico de pokemon
-  // Isso permite que consigamos pegar as infos dos pokemons.
-  // Nos métodos de ciclo de vida, ela é chamada passando como
-  // parâmetro o nome de pokemon que está chegando como props.
-
-    // pokemon = pokemon;
-
     return (
       <div>
         <p>{pokemon.name}</p>
