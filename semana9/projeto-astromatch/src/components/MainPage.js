@@ -14,7 +14,7 @@ const MainDiv = styled.div`
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background-color: #d33e43;
+    background-color: #ff006e;
 `
 
 const AplicationDiv = styled.div`
@@ -116,7 +116,6 @@ const BrokenHeartButton = styled.button`
     &:hover{
         color: purple;
         cursor: pointer;
-        
     }
 
     &:active{
@@ -136,7 +135,6 @@ const OnFireButton = styled.button`
     &:hover{
         color: red;
         cursor: pointer;
-        
     }
 
     &:active{
