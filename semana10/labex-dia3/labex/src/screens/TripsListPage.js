@@ -13,10 +13,15 @@ const TripsListPage = () => {
         history.push("/trips/details")
     }
 
+    const goToHomePage = () => {
+        history.push("/")
+    }
+
     return(
         <div>
            <p>Trips List</p> 
             <button onClick={goToTripsDetails}>Detalhes da viagem</button>
+            <button onClick={goToHomePage}>Página inicial</button>
         </div>
         
     )

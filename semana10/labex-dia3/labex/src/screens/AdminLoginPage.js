@@ -2,20 +2,58 @@ import React, { useEffect, useState } from "react"
 import { useHistory } from "react-router-dom"
 import styled from "styled-components"
 import axios from "axios"
+import planet from "../img/planet.jpg"
 
 const MainDiv = styled.div`
     display: flex;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
+    background-image: url(${planet});
+    background-size: cover;
 `
 
 const LoginDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     border-radius: 10px;
-    margin-top: 160px;
-    background-color: grey;
-    height: 50vh;
-    width: 20vw;
+    /* background-color: grey; */
+    height: 60vh;
+    width: 25vw;
+
+    input{
+        width: 65%;
+        border-radius: 5px;
+        border: 1px solid black;
+        height: 20px;
+    }
 `
+
+const LoginButton = styled.button`
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 80px;
+    background-color: #ffb703;
+    font-weight: 700;
+    
+    &:hover{
+        background-color: #312244;
+        color: white;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: brown;
+        color: white;
+    }
+`
+
 
 const AdminLoginPage = () => {
     const [email, setEmail] = useState()
@@ -58,10 +96,9 @@ const AdminLoginPage = () => {
     return(
         <MainDiv>
             <LoginDiv>
-                <p>Login Adm</p>
                 <input placeholder="Email" value={email} onChange={handleEmail}/>
                 <input placeholder="Senha" value={password} onChange={handlePassword}/>
-                <button onClick={login}>Login</button>
+                <LoginButton onClick={login}>Login</LoginButton>
             </LoginDiv>
         </MainDiv>
     )

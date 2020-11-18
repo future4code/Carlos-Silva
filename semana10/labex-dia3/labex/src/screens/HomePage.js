@@ -1,38 +1,41 @@
 import React from "react"
 import { useHistory } from "react-router-dom"
 import styled from "styled-components"
-import axios from "axios"
+import space from "../img/nasa-rTZW4f02zY8-unsplash.jpg"
 
 const MainDiv = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-image: url(${space});
+    background-size: cover;
 `
 
-const ImgLogoDiv = styled.div`
+const TitleDiv = styled.div`
     display: flex;
-    position: absolute;
-    border-radius: 10px;
-    border: 1px solid white;
-    left: 33vw;
-    top: 15vh;
-    height: 300px;
-    width: 500px;
-
-    img{
-        border-radius: 10px;
-    }
+    color: #cce6f4;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    height: 150px;
+    width: 150px;
+    border: 3px solid purple;
+    border-radius: 50%;
 `
 
 const ButtonsDiv = styled.div`
     display: flex;
     flex-direction: column;
-    position: absolute;
+    /* position: absolute; */
     bottom: 5vh;
-    right: 41vw;
+    right: 42vw;
     height: 150px;
     width: 200px;
     justify-content: space-evenly;
@@ -93,9 +96,9 @@ const HomePage = () => {
 
     return(
         <MainDiv>
-            <ImgLogoDiv>
-                <img src="https://picsum.photos/id/1022/500/300"/>
-            </ImgLogoDiv>
+            <TitleDiv>
+                <p>LabeX</p>
+            </TitleDiv>
             <ButtonsDiv>
                 <GoToLoginPageButton 
                 onClick={goToLoginPage}>
