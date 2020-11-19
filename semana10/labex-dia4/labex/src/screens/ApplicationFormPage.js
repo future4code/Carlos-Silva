@@ -25,7 +25,6 @@ const FormDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid red;
     height: 75vh;
     width: 50vw;
 `
@@ -33,10 +32,123 @@ const FormDiv = styled.div`
 const Form = styled.form`
     display: flex;
     height: 100%;
+    width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 `
 
+const NameInput = styled.input`
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+`
+
+const AgeInput = styled.input`
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+`
+
+const ProfessionInput = styled.input`
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+`
+
+const CountryInput = styled.input`
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+`
+
+const ApplicationInput = styled.input`
+    display: flex;
+    width: 50%;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+`
+
+const SubmitButton = styled.button`
+    height: 40px;
+    color: white;
+    background-color: #3a0ca3;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    &:hover{
+        background-color: #80b918;
+        color: black;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: yellow;
+        color: black;
+    }
+`
+
+const ExternalButtonsDiv = styled.div`
+    display: flex;
+    width: 80vw;
+    height: 10vh;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+`
+
+const GoToListPageButton = styled.button`
+    height: 20px;
+    color: #3a0ca3;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    &:hover{
+        background-color: #80b918;
+        color: black;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: yellow;
+        color: black;
+    }
+`
+
+const GoToHomePageButton = styled.button`
+    height: 20px;
+    color: #3a0ca3;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    &:hover{
+        background-color: #80b918;
+        color: black;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: yellow;
+        color: black;
+    }
+`
 const ApplicationFormPage = () => {
     const history = useHistory()
 
@@ -72,7 +184,7 @@ const ApplicationFormPage = () => {
             <p>FORMULÁRIO DE INSCRIÇÃO</p>
             <FormDiv>
                 <Form onSubmit={handleSubmit}>
-                    <input
+                    <NameInput
                         name="name"
                         placeholder="Nome"
                         value={form.name}
@@ -82,7 +194,7 @@ const ApplicationFormPage = () => {
                         onChange={handleInput}
                         required 
                     />
-                    <input
+                    <AgeInput
                         name="age"
                         placeholder="Idade"
                         value={form.age}
@@ -91,7 +203,7 @@ const ApplicationFormPage = () => {
                         onChange={handleInput}
                         required 
                     />
-                    <input
+                    <ProfessionInput
                         name="profession"
                         placeholder="Profissão"
                         value={form.profession}
@@ -101,14 +213,14 @@ const ApplicationFormPage = () => {
                         onChange={handleInput}
                         required 
                     />
-                    <input 
+                    <CountryInput 
                         name="country"
                         placeholder="País"
                         value={form.country}
                         onChange={handleInput}
                         required
                     />
-                    <input 
+                    <ApplicationInput 
                         name="applicationText"
                         placeholder="Porque você deveria ser aprovado?"
                         value={form.text}
@@ -117,11 +229,13 @@ const ApplicationFormPage = () => {
                         onChange={handleInput}
                         required
                     />
-                    <button type="submit">Quero essa viagem</button>
+                    <SubmitButton type="submit">Quero essa viagem</SubmitButton>
                 </Form>
-                <button onClick={goToTripsListPage}>Ver lista das viagens</button>
-                <button onClick={goToHomePage}>Página inicial</button>
             </FormDiv>
+            <ExternalButtonsDiv>
+                <GoToListPageButton onClick={goToTripsListPage}>Ver lista das viagens</GoToListPageButton>
+                <GoToHomePageButton onClick={goToHomePage}>Página inicial</GoToHomePageButton>
+            </ExternalButtonsDiv>
         </MainDiv>
     )
 }
