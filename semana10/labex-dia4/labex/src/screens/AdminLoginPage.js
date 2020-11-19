@@ -97,7 +97,7 @@ const AdminLoginPage = () => {
         <MainDiv>
             <LoginDiv>
                 <input placeholder="Email" value={email} onChange={handleEmail}/>
-                <input placeholder="Senha" value={password} onChange={handlePassword}/>
+                <input type="password" placeholder="Senha" value={password} onChange={handlePassword}/>
                 <LoginButton onClick={login}>Login</LoginButton>
             </LoginDiv>
         </MainDiv>

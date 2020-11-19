@@ -1,9 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import axios from "axios"
-import { useHistory, useParams } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 import { useForm } from "../hooks/useForm"
 import testify from "../img/testify.jpg"
+import { useTrips } from "../hooks/useTrips"
 
 const MainDiv = styled.div`
     display: flex;
@@ -149,12 +150,26 @@ const GoToHomePageButton = styled.button`
         color: black;
     }
 `
+
+const SelectTrips = styled.select`
+    display: flex;
+    height: 5%;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+`
+
+const Option = styled.option`
+
+`
+
 const ApplicationFormPage = () => {
     const history = useHistory()
 
-    const { id } = useParams()
+    const trips = useTrips()
 
-    const { form, onChange} = useForm({name: "", age: 0, applicationText: "", profession: "", country: ""})
+    const { form, onChange} = useForm({name: "", age: 0, applicationText: "", profession: "", country: "", tripId: ""})
 
     const handleInput = (event) => {
         const {value, name } = event.target;
@@ -164,7 +179,17 @@ const ApplicationFormPage = () => {
     const handleSubmit = (event) => {
         event.preventDefault()
 
-        axios.post(`https://us-central1-labenu-apis.cloudfunctions.net/labeX/carlos-silva-dumont/trips/${id}/apply`, form).then((response) => {
+        const id = form.tripId
+
+        const body = {
+            name: form.name,
+            age: Number(form.age),
+            applicationText: form.applicationText,
+            profession: form.profession,
+            country: form.country
+        }
+        
+        axios.post(`https://us-central1-labenu-apis.cloudfunctions.net/labeX/carlos-silva-dumont/trips/${id}/apply`, body).then((response) => {
             alert(response.data.message)
         }).catch((error) => {
             console.log(error)
@@ -229,7 +254,17 @@ const ApplicationFormPage = () => {
                         onChange={handleInput}
                         required
                     />
-                    <SubmitButton type="submit">Quero essa viagem</SubmitButton>
+                    <SelectTrips
+                        onChange={handleInput}
+                        value={form.tripId}
+                        name={'tripId'}
+                        >
+                        <Option value={''} hidden>Viagem</Option>
+                        {trips.map((trip) => {
+                            return <Option key={trip.id} name={"tripId"} value={trip.id}>{trip.name}</Option>
+                        })}
+                    </SelectTrips>
+                    <SubmitButton>Quero essa viagem</SubmitButton>
                 </Form>
             </FormDiv>
             <ExternalButtonsDiv>
