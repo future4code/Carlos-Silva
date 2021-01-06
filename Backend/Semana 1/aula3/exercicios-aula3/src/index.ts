@@ -75,3 +75,27 @@ app.get("/countries/:id", (req: Request, res: Response) => {
         res.status(404).send("Not found")
      }
 })
+
+app.delete("/countries/:id",(req: Request, res: Response) => {
+  let errorCode: number = 400
+
+  try {
+      if(!req.headers.authorization || req.headers.authorization.length < 10){
+          errorCode = 401
+          throw new Error("Chave de identificação inválida")
+      }
+
+      const index: number = countries.findIndex(
+          (country) => country.id === Number(req.params.id)
+      )
+
+      if(index === -1) {
+          errorCode = 404
+          throw new Error("País não encontrado")
+      }
+      countries.splice(index, 1)
+      res.status(200).send("País deletado com sucesso")
+  }catch (error) {
+      res.status(errorCode).send(error.message)
+  }
+})
