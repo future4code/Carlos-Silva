@@ -24,6 +24,13 @@ app.post("/users/create", (req:Request, res:Response) => {
          throw new Error("Idade deve ser maior que 18 anos")
       }
 
+      accounts.forEach(acc => {
+         if(acc.CPF === CPF){
+            res.statusCode = 406
+            throw new Error("CPF já cadastrado.")
+         }
+      })
+
       accounts.push({
          name,
          CPF,
@@ -47,6 +54,22 @@ app.get("/users/all", (req:Request, res:Response) => {
       }
       res.status(200).send(accounts)
    }catch (error){
+      console.error(error)
+      res.send (error.message)
+   }
+})
+
+app.get("/users/:cpf", (req:Request, res:Response) => {
+   try {
+      const CPF = req.params.cpf
+      let userBalance: any
+      accounts.find(thisUser => {
+         if(thisUser.CPF === CPF){
+            userBalance = thisUser.balance
+            res.send({userBalance})
+         }
+      })
+   } catch (error){
       console.error(error)
       res.send (error.message)
    }
