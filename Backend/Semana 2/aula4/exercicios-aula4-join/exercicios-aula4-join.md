@@ -101,7 +101,49 @@ LEFT JOIN Rating ON Movie.id = Rating.movie_id;
 #### Exercício 4 - letra b
 
 ```
-
+ SELECT Movie.id, Movie.title, MovieCast.actor_id FROM Movie RIGHT JOIN MovieCast ON MovieCast.movie_id = Movie.id;
 ```
 
 #### Exercício 4 - letra c
+
+```
+SELECT AVG(Rating.rate), Movie.id, Movie.title FROM Movie
+LEFT JOIN Rating ON Movie.id = Rating.movie_id
+GROUP BY (Movie.id);
+```
+
+#### Exercício 5 - letra a
+
+- Essa query junta as tabelas Movie e MovieCast no primeiro JOIN e o resultado disso é unido à tabela Actor no segundo JOIN.
+
+#### Exercício 5 - letra b
+
+```
+SELECT Movie.id as movie_id, Movie.title as movie_title, Actor.id as actor_id, Actor.name as actor_name FROM Movie LEFT JOIN MovieCast ON Movie.id = MovieCast.movie_id JOIN Actor ON Actor.id = MovieCast.actor_id;
+```
+
+#### Exercício 5 - letra c
+
+- A query em questão une as tabelas Movie, Actor e MovieCast, utilizando dois JOINs e retornando somente id e nome dos atores e id e titulo dos filmes.
+
+#### Exercício 5 - letra d
+
+- Se der tempo eu volto nessa. :)
+
+#### Exercício 6 - letra a
+
+- Essa relação é do tipo N:M
+
+#### Exercício 6 - letra b
+
+```
+ALTER TABLE Movie ADD oscar VARCHAR (255);
+
+ALTER TABLE Movie ADD oscar_date DATE;
+```
+
+#### Exercício 6 - letra c
+
+```
+
+```
