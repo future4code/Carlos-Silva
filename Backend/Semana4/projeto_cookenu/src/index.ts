@@ -5,6 +5,7 @@ import knex from "knex";
 import dotenv from "dotenv"
 import insertUser from "./data/insertUser";
 import createUser from "./endpoints/signup";
+import { login } from "./endpoints/login";
 
 dotenv.config();
 
@@ -25,7 +26,7 @@ export const connection = knex({
 });
 
 app.post('/user/signup', createUser)
-app.post('/user/login')
+app.post('/user/login', login)
 app.post('/recipe')
 app.get('/user/profile')
 app.get('/user/:id')
